@@ -1,0 +1,69 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="../../assets/mufg.png" class="d-inline-block align-top nav-icon apix-logo" alt="">
+    <img src="../../assets/hv.png" class="d-inline-block align-top nav-icon hyperverge-logo" alt="">
+  </a>
+</nav>
+<div class="container-fluid canvas-bg">
+  <div class="container content-bg">
+
+    <div class="page-heading">
+
+      <h1 class="title">WELCOME TO MODEL BANK</h1>
+      <h6 class="subheading">Thank you for choosing to create an account with us.</h6>
+
+      <hr>
+
+    </div>
+
+    <div class="row steps-custom">
+
+      <div class="text-center progress-circle-active">
+        <span class="span-number">01</span>
+      </div>
+
+      <div class="div progress-tracker"></div>
+
+      <div class="text-center progress-circle">
+        <span class="span-number">02</span>
+      </div>
+
+      <div class="div progress-tracker"></div>
+
+
+      <div class="text-center progress-circle">
+        <span class="span-number">03</span>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <!--Step Action-->
+      <p class="text-description">First, let's valiate your identity.
+        <br> Please submit your National Identity Document and your picture.</p>
+    </div>
+
+    <div class="form">
+      <div class="id-photo upload">
+        <label class="label">UPLOAD ID PHOTO</label>
+        <br>
+        <input class="input-field" type="file" (change)="onFile1Selected($event)" />
+      </div>
+
+      <div class="selfie-photo upload">
+        <label class="label">UPLOAD SELFIE</label>
+        <br>
+        <input class="input-field" type="file" (change)="onFile2Selected($event)" />
+      </div>
+
+      <div class="text-center">
+        <button class="input-button" (click)="verifyUser()">Verify</button> &nbsp;&nbsp;
+        <img *ngIf="verified" src="../../assets/checked.png" />
+      </div>
+      <div class="verified">
+        <p *ngIf="verified" class="verified-text">Verified</p>
+      </div>
+    </div>
+
+  </div>
+</div>
