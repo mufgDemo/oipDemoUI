@@ -2,7 +2,7 @@
   height: 45px;  
 }
 
-.apix-logo{
+.oip-logo{
   padding: 4px;
   padding-right: 1rem; 
   margin-right: 1rem; 
@@ -35,9 +35,9 @@
 .progress-circle-active{
   width: 4rem;
   height: 4rem;
-  border: 2px solid #e50000;
+  border: 2px solid #00aced;
   border-radius: 1000px;
-  color: #e50000;
+  color: #00aced;
   padding: 1rem;
 }
 
@@ -59,7 +59,7 @@
   height: 0rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  border: 2px solid #e50000;
+  border: 2px solid #00aced;
 }
 
 .page-heading{
@@ -88,18 +88,18 @@
 }
 
 .input-button{
-  background-color: #e50000;
+  background-color: #00aced;
   color: white;
   padding: 7px 50px;
-  border: 1px solid #e50000;
+  border: 1px solid #00aced;
   border-radius: 100px;
   margin-top: 1rem;
 }
 
 .input-button:hover{
-  border: 1px solid #e50000;
+  border: 1px solid #00aced;
   background-color: #00000000;
-  color: #e50000;
+  color: #00aced;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
